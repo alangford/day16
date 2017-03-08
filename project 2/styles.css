@@ -1,0 +1,13 @@
+.quotes{
+
+    background-color: rgba(247,255,251,0.39);
+    font-size: 3vh;
+    border-bottom: solid rgba(212,220,216,0.39) 5px;
+    border-radius: 25px;
+    padding: 3vh 1vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+.input-field{
+margin: 0 40vw;
+}

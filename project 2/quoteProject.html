@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="js">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body ng-controller="controller">
+
+<span class="input-field">
+    <input placeholder="Add a quote here!!!" type="text" ng-model="quoteText">
+    <input placeholder="Add an author here!!!" type="text" ng-model="authorName">
+    <button ng-click="add(quoteText, authorName)">Click to Add</button>
+     <select class="input-medium" ng-model="sortProp">
+         <option ng-repeat="opt in options" >
+             {{opt}}
+         </option>
+          </select>
+</span>
+
+
+
+    <div class="quotes" ng-repeat="i in quotes | orderBy: sortProp">
+        <h1>""{{i.text}}""</h1>  <cite>-{{i.author}}</cite> <button ng-click="delete($index)">X</button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="../../JS-Librarys/angular.js"></script>
+<script src="js/js.js"></script>
+<script src="js/controller.js"></script>
+<script src="js/services.js"></script>
+</body>
+</html>

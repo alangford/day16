@@ -1,0 +1,3 @@
+using services
+singleton pattern is one copy shared bewteen multiple people
+dependince injection
